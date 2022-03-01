@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html style="padding: 0px;">
+<head>
+    <meta charset="UTF-8">
+    <title>Setting</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+<body style="background: white;height: 100vh;margin: 0px;display: flex;justify-content: center;align-items: center;">
+    <fieldset style="width: 480px;">
+        <legend>Setting</legend>
+        <p id="p-edit">
+            <div style="display:flex;flex-direction: column;">
+                <label for="text-token">Server: </label>
+                <input type='text' id="text-server" style="width: calc(100% - 10px);margin-top: 5px;"/>
+            </div>
+            <div style="margin-top:10px;display:flex;flex-direction: column;">
+                <label for="text-token">Link check-in: </label>
+                <input type='text' id="text-link" style="width: calc(100% - 10px);margin-top: 5px;"/>
+            </div>
+            <div style="margin-top:10px;display:flex;flex-direction: column;">
+                <label for="text-token">Access Token: </label>
+                <input type='text' id="text-token" style="width: calc(100% - 10px);margin-top: 5px;"/>
+            </div>
+            <div style="margin-top:10px;display:flex;flex-direction: column;">
+                <label for="text-app">ID App: </label>
+                <input type='text' id="text-app" style="width: calc(100% - 10px);margin-top: 5px;"/>
+            </div>
+
+            <div style="margin-top:10px;display:flex;flex-direction: column;">
+                <label for="text-ip">Device IP: </label>
+                <input type='text' id="text-ip" style="width: calc(100% - 10px);margin-top: 5px;"/>
+            </div>
+            <div style="margin-top:10px;display:flex;flex-direction: column;">
+                <label for="text-ip">Device Port: </label>
+                <input type='text' id="text-port" style="width: calc(100% - 10px);margin-top: 5px;"/>
+            </div>
+            <div style="margin-top:10px;display:flex;flex-direction: column;">
+                <label for="text-ip">Timeout: </label>
+                <input type='number' id="text-timeout" style="width: calc(100% - 10px);margin-top: 5px;"/>
+            </div>
+            <div style="margin-top:10px;display:flex;flex-direction: row;">
+                <input type='checkbox' id="check-realtimelog" style="margin-right: 5px;"/>
+                <label for="check-realtimelog">The device supports real-time log</label>
+            </div>
+
+            <div style="margin-top:10px;display:flex;flex-direction: column;">
+                <label for="text-ip">Type: </label>
+                <select id="text-type" style="width: calc(100% - 10px);margin-top: 5px;">
+                    <option value="1">Checkin Employee</option>
+                    <option value="2">Checkin Customer (member)</option>
+                    <option value="3">Checkin Customer and Employee</option>
+                </select>
+            </div>
+
+            <div style="margin-top:10px;display:flex;flex-direction: row;">
+                <input type='checkbox' id="check-fullscreen" style="margin-right: 5px;"/>
+                <label for="check-fullscreen">Full screen </label>
+            </div>
+            
+        </p>
+        <div style="padding:20px;display:flex;justify-content:center">
+            <input type='button' id="btn-save" value="Update"/>
+            <input style="margin-left:10px" type='button' id="btn-restart" value="Restart"/>
+            <input style="margin-left:10px" type='button' id="btn-close" value="Close"/>
+        </div>
+    </fieldset>
+</body>
+</html>
